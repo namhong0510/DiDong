@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ex2.MainActivity2"
+    android:orientation="vertical"
+    android:padding="16dip">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:id="@+id/rv_2"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total User: 0"
+        android:id="@+id/tv_total"/>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_add_user"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Add 5 more users"
+            android:textSize="16sp"
+            android:layout_marginTop="8dip"
+            android:layout_marginBottom="8dip"/>
+
+        <TextView
+            android:layout_width="16dip"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btn_remove_user"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Remove 5 users"
+            android:textSize="16sp"
+            android:layout_marginTop="8dip"
+            android:layout_marginBottom="8dip"/>
+
+    </LinearLayout>
+
+</LinearLayout>
